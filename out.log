@@ -1,0 +1,12 @@
+2020-02-19 22:30:17 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2020-02-19 22:30:17 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.37 ----------
+
+2020-02-19 22:30:17 INFO  PluginTasksProjectComponent.setAutoscrolls(366) - Autoscrolls successfully set
+2020-02-19 22:30:18 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(580) - The session is not set in the property file.
+2020-02-19 22:30:18 INFO  ApacheHttpClient.login(246) - Waiting for server response.
+2020-02-19 22:30:18 INFO  ApacheHttpClient.login(250) - responseCode = 200
+2020-02-19 22:30:18 INFO  ApacheHttpClient.login(273) - JSESSIONID OK
+2020-02-19 22:30:18 INFO  ApacheHttpClient.refreshUserInfo(301) - responseCode = 200
+2020-02-19 22:30:18 INFO  ApacheHttpClient.refreshUserInfo(307) - User information received.
+2020-02-19 22:30:18 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-02-19 22:30:18 INFO  AbstractRestApiClient.startService(71) - EventsService started.
