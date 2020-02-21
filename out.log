@@ -260,3 +260,13 @@
 2020-02-21 14:00:17 INFO  ApacheHttpClient.refreshUserInfo(307) - User information received.
 2020-02-21 14:00:17 INFO  ApacheHttpClient.startGA(35) - GAService started.
 2020-02-21 14:00:17 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-02-21 14:13:55 INFO  ApacheHttpClient.getWebResourceAsStream(493) - responseCode = 200
+2020-02-21 14:13:55 INFO  ApacheHttpClient.getFilteredTasks(332) - responseCode = 200
+2020-02-21 14:14:02 INFO  ApacheHttpClient.getFilteredTasks(332) - responseCode = 200
+2020-02-21 14:14:09 INFO  ApacheHttpClient.getFilteredTasks(332) - responseCode = 200
+2020-02-21 14:14:15 INFO  ApacheHttpClient.getFilteredTasks(332) - responseCode = 200
+2020-02-21 14:14:17 INFO  ApacheHttpClient.getTaskTemplateInfo(349) - responseCode = 200
+2020-02-21 14:14:23 INFO  ApacheHttpClient.getWebResourceAsStream(493) - responseCode = 200
+2020-02-21 14:15:17 INFO  ApacheHttpClient.sendEvent(526) - responseCode = 200
+2020-02-21 14:18:25 INFO  ApacheHttpClient.getWebResourceAsStream(493) - responseCode = 200
+2020-02-21 14:19:17 INFO  ApacheHttpClient.sendEvent(526) - responseCode = 200
