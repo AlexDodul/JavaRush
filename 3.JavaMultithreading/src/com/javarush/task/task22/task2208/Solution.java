@@ -21,9 +21,11 @@ public class Solution {
 
     public static String getQuery(Map<String, String> params) {
         StringBuilder builder = new StringBuilder();
-        for (Map.Entry<String, String> each : params.entrySet())
-            if (each.getValue() != null && !each.getValue().isEmpty())
-                builder.append(each.getKey()+" = \'"+each.getValue()+"\'\n");
+        for (Map.Entry<String, String> each : params.entrySet()) {
+            if (each.getValue() != null && !each.getValue().isEmpty()){
+                builder.append(each.getKey() + " = \'" + each.getValue() + "\'\n");
+            }
+        }
         return String.join(" and ", builder.toString().split("\n"));
     }
 }
