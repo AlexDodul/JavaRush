@@ -1,5 +1,7 @@
 package com.javarush.task.task23.task2312;
 
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
