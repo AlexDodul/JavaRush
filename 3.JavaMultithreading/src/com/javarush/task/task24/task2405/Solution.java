@@ -1,8 +1,6 @@
 package com.javarush.task.task24.task2405;
 
-import static com.javarush.task.task24.task2405.SecondClass.SPECIFIC_ACTION_FOR_ANONYMOUS_SECOND_CLASS_PARAM;
-
-/*
+/* 
 Black box
 */
 public class Solution implements Action {
@@ -14,31 +12,33 @@ public class Solution implements Action {
         //напишите тут ваш код
 
         public void someAction() {
-            //!!!!! Все изменения должны быть только тут
-            if (param > 0) {
-                for (int i = 0; i < param; ) {
+            //напишите тут ваш код
+            if (param > 0){
+                for (int i = 0; i < param;){
                     System.out.println(param);
                     param--;
                 }
-                new FirstClass() {
+                new FirstClass(){
                     @Override
-                    public Action getDependantAction() {
+                    public Action getDependantAction(){
                         super.someAction();
                         return new SecondClass(){
                             @Override
-                            public void someAction() {
+                            public void someAction(){
                                 System.out.println(sb.append(SPECIFIC_ACTION_FOR_ANONYMOUS_SECOND_CLASS_PARAM).append(param));
                             }
                         };
                     }
-
-                }.getDependantAction().someAction(); }
-            else new SecondClass(){
-                @Override
-                public void someAction() {
-                    System.out.println(sb.append(SPECIFIC_ACTION_FOR_ANONYMOUS_SECOND_CLASS_PARAM).append(param));
-                }
-            }.someAction();
+                }.getDependantAction().someAction();
+            }
+            else {
+                new SecondClass(){
+                  @Override
+                  public void someAction(){
+                      System.out.println(sb.append(SPECIFIC_ACTION_FOR_ANONYMOUS_SECOND_CLASS_PARAM).append(param));
+                  }
+                }.someAction();
+            }
         }
     };
 
