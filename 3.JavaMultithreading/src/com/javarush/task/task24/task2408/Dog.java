@@ -1,5 +1,8 @@
 package com.javarush.task.task24.task2408;
 
+import java.text.DateFormat;
+import java.util.Date;
+
 /*
 В работе вам иногда будет нужно закастить класс к какому-нибудь другому классу, не интерфейсу :)))
 Класс DogPet использует 2 класса - SuperDog и Dog, разберись с getName в классе DogPet
@@ -42,6 +45,56 @@ public class Dog implements Pet {
      * @return экземпляр класса DogPet
      */
     public Sayable toSayable(final int i) {
-        return null;
+        class DogPet extends SuperDog implements Sayable{
+            private String getName(){
+                return getSuperQuotes() + name + getSuperQuotes();
+            }
+
+            @Override
+            public String say(){
+                if (i < 1){
+                    return getName() + " спит.";
+                }
+                else {
+                    StringBuilder build = new StringBuilder();
+                    build.append(getName()).append(" лает г");
+                    for (int j = 0; j < i; j++){
+                        build.append("а");
+
+                    }
+                    Date date = new Date();
+                    build.append("в!");
+                    build.append(" " + formatter.format(date));
+                    return build.toString();
+                }
+            }
+        }
+        return new DogPet();
     }
+
+    /*-------------------------------другой способ------------------------------*/
+    /*public Sayable toSayable(final int i) {
+
+        class DogPet extends SuperDog implements Sayable {
+
+            private String getName(){
+                return getSuperQuotes()+name+getSuperQuotes();
+            }
+
+            @Override
+            public String say() {
+                if (i < 1) {
+                    return getName()+" спит.";
+                } else {
+                    char[] chars = new char[i];
+                    Arrays.fill(chars, 'а');
+                    return String.format("%s лает г%sв! %s", getName(), new String(chars) , formatter.format(new Date()));
+                }
+            }
+        }
+
+       return new DogPet();
+    }*/
+
+
 }
