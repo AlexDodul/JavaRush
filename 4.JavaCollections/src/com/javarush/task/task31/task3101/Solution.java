@@ -10,6 +10,7 @@ import java.util.*;
 Проход по дереву файлов
 */
 public class Solution {
+
     public static void main(String[] args) throws IOException {
         File folder = new File(args[0]);
         File source = new File(args[1]);
